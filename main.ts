@@ -1,8 +1,4 @@
-// A tiny stack virtual machine for make.fun's tiny stack ISA v1: one run
-// answers a whole set, executing each <id>/program.bin on its input.bin
-// exactly as the ISA states (wrapping 32-bit values, 256-value stack,
-// 64-deep call stack, 256 words of memory, ten traps, step/output limits)
-// and writing <id>/stdout.bin and <id>/exit.txt to the output dir.
+// Tiny stack VM, ISA v1.
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
